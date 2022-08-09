@@ -22,10 +22,4 @@ class Application < Sinatra::Base
     message = params[:message]
     "Thanks #{name}, you sent this message: #{message}"
   end
-
-
-<<<<<<< HEAD
 end
-=======
-end
->>>>>>> 0481ddb265bfe2ced8e5a23e57be27b69d9611c1
