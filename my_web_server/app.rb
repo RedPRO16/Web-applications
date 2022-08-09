@@ -1,16 +1,19 @@
 require 'sinatra/base'
-require 'sinatra/reloader'
+
 
 class Application < Sinatra::Base
   # This allows the app code to refresh
   # without having to restart the server.
-  configure :development do
-    register Sinatra::Reloader
-  end
-end
 
-class Application
   get '/' do
-    "Hello World"
+    'Hello World!'
+
+    return 'Hello World!'
   end
+
+  get '/posts' do
+   return 'A list of post'
+
+  end
+
 end
